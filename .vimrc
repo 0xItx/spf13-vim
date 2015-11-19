@@ -556,7 +556,7 @@
         " Make tags placed in .git/tags file available in all levels of a repository
         let gitroot = substitute(system('git rev-parse --show-toplevel'), '[\n\r]', '', 'g')
         if gitroot != ''
-            let &tags = &tags . ',' . gitroot . '/.git/tags'
+            let &tags = gitroot . '/.git/tags' . ',' . &tags
         endif
     " }
 
@@ -575,7 +575,7 @@
     " NerdTree {
         if isdirectory(expand("~/.vim/bundle/nerdtree"))
             map <leader>ee <plug>NERDTreeTabsToggle<CR>
-            nmap <leader>nt :NERDTreeFind<CR>
+            nmap <leader>ew :NERDTreeFind<CR>
 
             let NERDTreeShowBookmarks=1
             let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$']

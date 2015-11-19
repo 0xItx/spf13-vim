@@ -22,7 +22,7 @@
 " spf13 options {
 
     " Prevent automatically changing to open file directory
-    "   let g:spf13_no_autochdir = 1
+       let g:spf13_no_autochdir = 1
 
     " Disable views
     "   let g:spf13_no_views = 1
@@ -95,7 +95,7 @@
     " Mappings for editing/applying spf13 config
     "   let g:spf13_edit_config_mapping='<leader>ev'
     "   let g:spf13_apply_config_mapping='<leader>sv'
-    
+
 " }
 
 " Use fork before if available {
