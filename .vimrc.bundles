@@ -126,7 +126,7 @@
             Bundle 'jistr/vim-nerdtree-tabs'
             Bundle '0xItx/vim-colorschemes'
             Bundle 'mbbill/undotree'
-            Bundle 'nathanaelkane/vim-indent-guides'
+            Bundle 'Yggdroot/indentLine'
             if !exists('g:spf13_no_views')
                 Bundle 'vim-scripts/restore_view.vim'
             endif
