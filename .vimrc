@@ -93,7 +93,6 @@
             set background=dark
         endif
     endfunction
-    noremap <leader>bg :call ToggleBG()<CR>
 
     " if !has('gui')
         "set term=$TERM          " Make arrow and other keys work
