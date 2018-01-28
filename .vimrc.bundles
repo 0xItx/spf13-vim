@@ -75,8 +75,8 @@
 
     " Deps {
         Bundle 'gmarik/vundle'
-        Bundle 'MarcWeber/vim-addon-mw-utils'
-        Bundle 'tomtom/tlib_vim'
+        " Bundle 'MarcWeber/vim-addon-mw-utils'
+        " Bundle 'tomtom/tlib_vim'
         if executable('ag')
             Bundle 'mileszs/ack.vim'
             let g:ackprg = 'ag --vimgrep'
@@ -124,7 +124,7 @@
             " Bundle 'powerline/fonts'
             Bundle 'bling/vim-bufferline'
             Bundle 'easymotion/vim-easymotion'
-            Bundle 'jistr/vim-nerdtree-tabs'
+            " Bundle 'jistr/vim-nerdtree-tabs'
             Bundle '0xItx/vim-colorschemes'
             Bundle 'mbbill/undotree'
             Bundle 'Yggdroot/indentLine'
@@ -152,14 +152,16 @@
     " General Programming {
         if count(g:spf13_bundle_groups, 'programming')
             " Pick one of the checksyntax, jslint, or syntastic
-            Bundle 'scrooloose/syntastic'
+            " Bundle 'scrooloose/syntastic'
             Bundle 'tpope/vim-fugitive'
             " Bundle 'mattn/webapi-vim'
             " Bundle 'mattn/gist-vim'
             Bundle 'scrooloose/nerdcommenter'
             " Bundle 'tpope/vim-commentary'
             " Bundle 'godlygeek/tabular'
-            Bundle 'luochen1990/rainbow'
+            " Bundle 'luochen1990/rainbow'
+            Bundle 'kana/vim-textobj-user'
+            Bundle 'kana/vim-textobj-function'
             if executable('ctags')
                 Bundle 'majutsushi/tagbar'
             endif
