@@ -179,6 +179,7 @@
         elseif count(g:spf13_bundle_groups, 'deoplete')
             Bundle 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
             Bundle 'deoplete-plugins/deoplete-jedi'
+            Bundle 'Shougo/deoplete-clangx'
             Bundle 'SirVer/ultisnips'
             Bundle 'honza/vim-snippets'
         elseif count(g:spf13_bundle_groups, 'neocomplcache')
