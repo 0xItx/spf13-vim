@@ -1,5 +1,5 @@
 " Modeline and Notes {
-" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker:
 "
 "                    __ _ _____              _
 "         ___ _ __  / _/ |___ /      __   __(_)_ __ ___
@@ -708,14 +708,14 @@
         endif
     "}
 
-    " YouCompleteMe {
-        if count(g:spf13_bundle_groups, 'youcompleteme')
+    " deoplete {
+        if count(g:spf13_bundle_groups, 'deoplete')
             let g:acp_enableAtStartup = 0
 
-            " enable completion from tags
-            let g:ycm_collect_identifiers_from_tags_files = 1
+            " deoplete options
+            let g:deoplete#enable_at_startup = 1
 
-            " remap Ultisnips for compatibility for YCM
+            " remap Ultisnips for compatibility with deoplete
             let g:UltiSnipsExpandTrigger = '<C-j>'
             let g:UltiSnipsJumpForwardTrigger = '<C-j>'
             let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
